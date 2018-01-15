@@ -80,14 +80,11 @@ articleView.setTeasers = function() {
 
 articleView.initNewArticlePage = function() {
   $('articles').empty();
-
   $('.tab-content').show();
-
   $('#export-field').hide();
-
-$('article-json').on('focus', function()){
-  console.log('this:' this);
-  console.log('$(this)',$(this);
+  $('article-json').on('focus', function(){
+  console.log('this:', this);
+  console.log('$(this)',$(this));
   this.select();
 });
 
