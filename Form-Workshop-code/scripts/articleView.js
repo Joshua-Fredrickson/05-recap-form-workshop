@@ -105,6 +105,8 @@ articleView.create = () => {
     category: $('#article-category').val(),
     body: $('#article-body').val(),
     publishedOn: $('#article-published:checked').length ? new Date() : null
+    // on the line of code above, the #article-published is a checkbox.  With the \"checked\"" statement, this tells us that the checkbox was checked by the user.  (if not the value would be null).
+    // the ? is ternary operator like an \"if\" conditional.  the syntax works like  var ? (return val truethy) : (return val falsey)
   });
 
   $('#articles').append(article.toHtml());
