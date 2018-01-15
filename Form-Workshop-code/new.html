@@ -53,36 +53,32 @@
            <h1>New Article<h1>
             <form action="#" id="new-form">
                 <label>
-                    <input type="text" id="article-title" placeholder="article title" required>
+                  <input type="text" id="article-title" placeholder="article title" required>
                 </label>
-
-                <textarea id="article-body" rows="8" cols="40" required></textarea>
-
+                  <textarea id="article-body" rows="8" cols="40" required></textarea>
                 <label>
-                    <input type="text" id="article-author" placeholder="author name" required>
+                  <input type="text" id="article-author" placeholder="author name" required>
                 </label>
                 <label>
-                    <input type="text" id="article-author-url" placeholder="author url" required>
+                  <input type="text" id="article-author-url" placeholder="author url" required>
                 </label>
                 <label>
-                    <input type="text" id="article-category" placeholder="category" required>
+                  <input type="text" id="article-category" placeholder="category" required>
                 </label>
                 <label>
-                        <input type="checkbox" id="published">
-                        <span>published?</span>
-                    </label>
+                  <input type="checkbox" id="published">
+                    <span>published?</span>                 
+                </label>
             </form>
-            </section>
-            <section id='articles' class="tab-content">
-
-            </section>
-
-            <section id="article-export">
-                <label id="export-field" for="article-json">
-                    <input type="text" id="article-json" readonly>
-                    <span>when done, copy the JSON from above</span>
-                </label>
-            </section>
+        </section>
+        <section id='articles' class="tab-content">
+        </section> <!-- hold articles and we can preview them -->
+        <section id="article-export">
+          <label id="export-field" for="article-json">
+            <input type="text" id="article-json" readonly>
+              <span>when done, copy the JSON from above</span>
+          </label>
+        </section>
     </main>
     <footer>
       &copy; 2017 Code Fellows | Static Blog | Happy Ipsum!
